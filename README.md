@@ -1,32 +1,161 @@
-# Netflix Data Analysis Using Python — Auspify Internship
+# Netflix Data Analysis Using Python 🎬
 
-## Project coverage
-This project implements all six tasks listed in the supplied internship PDF:
-1. Netflix data cleaning and preparation
-2. Movie vs TV Show content-type analysis
-3. Country-wise content analysis
-4. Release-year trend analysis
-5. Rating and genre analysis
-6. Business insights report
+### Auspify Technologies — Internship Project
 
-## Dataset
-The supplied `Dataset.csv` contains Netflix catalogue records. The cleaned dataset is saved as `netflix_cleaned.csv`.
-Some fields such as director, country, rating, duration and genres may be missing in the source. These are labelled `Not Specified` for analysis; `date_added` remains blank if it cannot be parsed.
+**Project By: Ankit Saraswat**
 
-## Run the code
-1. Install Python 3.10+.
-2. Install dependencies: `pip install pandas matplotlib`
-3. Keep `Dataset.csv` in the same folder as `netflix_analysis.py`.
-4. Run: `python netflix_analysis.py`
-5. Results are written to the `outputs/` folder.
+---
 
-## Important counting note
-Country and genre columns can contain multiple comma-separated values. For country and genre ranking, each title is split into its country/genre entries. Therefore these rankings count title-country or title-genre entries, not unique titles by one exclusive country/genre.
+## 📌 Project Overview
 
-## Submission checklist
-- `netflix_analysis.py` — reproducible source code
-- `netflix_cleaned.csv` — cleaned dataset
-- `charts/` — generated chart images
-- summary CSV tables
-- `Netflix_Analysis_Report.pdf` — written report
-- `Dataset.csv` — original input file, included for reproducibility
+This project focuses on analyzing Netflix catalogue data using Python. It covers data cleaning, exploratory data analysis (EDA), data visualization, content distribution, country-wise analysis, release-year trends, ratings, genres, and business insights.
+
+The project covers all six tasks listed in the Auspify Technologies *Data Analysis Using Python Internship Task List*.
+
+## 🎯 Project Objectives
+
+- Clean and prepare the Netflix dataset for analysis.
+- Analyze Movies and TV Shows distribution.
+- Identify countries with the highest number of catalogue entries.
+- Study content release trends over time.
+- Analyze content ratings and genres.
+- Generate meaningful business insights using data visualization.
+
+## 🛠️ Tools & Technologies
+
+- **Python** — Data analysis and processing
+- **Pandas** — Data cleaning and manipulation
+- **NumPy** — Numerical operations
+- **Matplotlib** — Data visualization
+- **Jupyter Notebook** — Interactive analysis
+- **CSV** — Dataset and analytical outputs
+
+## 📂 Project Tasks
+
+### Task 1: Netflix Data Cleaning & Preparation
+- Imported the dataset using Pandas.
+- Identified missing values.
+- Checked and handled duplicate records.
+- Standardized column names and text formatting.
+- Prepared the cleaned dataset for analysis.
+
+### Task 2: Content Type Analysis
+- Calculated the number of Movies and TV Shows.
+- Compared content distribution and percentages.
+- Created visualizations to understand the catalogue composition.
+
+### Task 3: Country-Wise Content Analysis
+- Extracted country information from the dataset.
+- Split multiple country entries for analysis.
+- Identified the top 10 countries by catalogue entries.
+- Created country-wise ranking visualizations.
+
+### Task 4: Trend Analysis by Release Year
+- Analyzed content by release year.
+- Identified years with higher numbers of releases.
+- Created trend visualizations.
+- Separately analyzed catalogue additions by year where valid dates were available.
+
+### Task 5: Content Rating & Genre Analysis
+- Examined content rating categories.
+- Identified the most frequent genres.
+- Compared ratings across Movies and TV Shows.
+- Created charts for rating and genre analysis.
+
+### Task 6: Netflix Business Insights Report
+- Combined findings from the analysis.
+- Identified content distribution and catalogue trends.
+- Prepared business insights and recommendations.
+- Created a final PDF report with visualizations.
+
+## 📊 Key Analysis Areas
+
+- Content Type Distribution
+- Top 10 Countries by Catalogue Entries
+- Release-Year Trends
+- Titles Added by Year
+- Content Rating Distribution
+- Top 15 Genres
+- Rating Comparison by Content Type
+- Business Insights and Recommendations
+
+## 🧹 Data Cleaning
+
+The data preparation process includes:
+- Standardizing column names.
+- Removing leading and trailing spaces.
+- Normalizing content type and rating labels.
+- Converting date and year fields to suitable data types.
+- Checking exact duplicates and duplicate show IDs.
+- Labelling missing descriptive categorical values as `Not Specified`.
+
+Missing or invalid dates are retained as blank values when they cannot be parsed.
+
+## ▶️ How to Run This Project
+
+### 1. Install Python
+
+Install Python 3.10 or later.
+
+### 2. Install Required Libraries
+
+```bash
+pip install pandas numpy matplotlib
+```
+
+### 3. Prepare the Files
+
+Keep `Dataset.csv` and `netflix_analysis.py` in the same folder.
+
+### 4. Run the Python Script
+
+```bash
+python netflix_analysis.py
+```
+
+### 5. Review the Outputs
+
+Review the cleaned dataset, summary CSV files, charts, and analysis results generated by the script.
+
+You can also open `Netflix_Data_Analysis.ipynb` in Jupyter Notebook and execute the analysis cells.
+
+## 📁 Project Files
+
+- `Dataset.csv` — Original dataset
+- `netflix_cleaned.csv` — Cleaned dataset
+- `netflix_analysis.py` — Python source code
+- `Netflix_Data_Analysis.ipynb` — Jupyter Notebook
+- `Netflix_Analysis_Report.pdf` — Final analysis report
+- `content_type_summary.csv` — Content type summary
+- `top_10_countries.csv` — Country analysis
+- `releases_by_year.csv` — Release-year summary
+- `rating_summary.csv` — Rating summary
+- `top_15_genres.csv` — Genre analysis
+- `rating_by_content_type.csv` — Rating comparison
+- `charts/` — Generated visualization images
+
+## 📈 Key Learning Outcomes
+
+- Data Cleaning and Preprocessing
+- Exploratory Data Analysis (EDA)
+- Missing Value Handling
+- Duplicate Detection
+- Data Aggregation and GroupBy
+- Data Visualization
+- Trend Analysis
+- Business Insights and Reporting
+
+## 👨‍💻 Author
+
+**Ankit Saraswat**
+
+Aspiring Data Analyst | Python | SQL | Excel | Power BI
+
+This project was prepared as part of the Data Analysis Using Python internship task list provided by Auspify Technologies.
+
+---
+
+⭐ If you find this project useful, feel free to explore the code and visualizations.
+
+**Thank you for visiting my project!**
+
